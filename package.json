@@ -22,6 +22,7 @@
     "build-storybook": "build-storybook"
   },
   "peerDependencies": {
+    "bootstrap": ">=4.5",
     "react": ">=16"
   },
   "husky": {
@@ -56,9 +57,12 @@
     "@storybook/addon-links": "^6.1.11",
     "@storybook/addons": "^6.1.11",
     "@storybook/react": "^6.1.11",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.3",
     "@types/react": "^17.0.0",
     "@types/react-dom": "^17.0.0",
     "babel-loader": "^8.2.2",
+    "bootstrap": "^4.5.3",
     "husky": "^4.3.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",

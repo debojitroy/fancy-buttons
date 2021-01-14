@@ -38,6 +38,10 @@
   },
   "name": "fancy-buttons-npm-template",
   "author": "Debojit Roy",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/debojitroy/fancy-buttons"
+  },
   "module": "dist/fancy-buttons.esm.js",
   "size-limit": [
     {

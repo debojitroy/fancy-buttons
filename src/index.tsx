@@ -5,5 +5,9 @@ export interface Props extends HTMLAttributes<HTMLButtonElement> {
 }
 
 export const Button: FC<Props> = ({ text }) => {
-  return <button type="button" className="btn btn-primary">{text}</button>;
+  return (
+    <button type="button" className="btn btn-primary">
+      {text}
+    </button>
+  );
 };

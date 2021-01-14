@@ -36,7 +36,7 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "fancy-buttons",
+  "name": "fancy-buttons-npm-template",
   "author": "Debojit Roy",
   "module": "dist/fancy-buttons.esm.js",
   "size-limit": [

@@ -1,0 +1,27 @@
+name: Release
+on:
+  release:
+    types: [created]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repo
+      uses: actions/checkout@v2
+
+    - name: Setup .npmrc file to publish to npm
+      uses: actions/setup-node@v1
+      with:
+        node-version: '12.x'
+        registry-url: 'https://registry.npmjs.org'
+
+    - name: Install deps and build (with cache)
+      run: yarn
+
+    - name: Run Unit Tests
+      run: yarn test --ci --coverage --maxWorkers=2
+
+    - name: Publish to NPM
+      run: yarn publish
+      env:
+        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
